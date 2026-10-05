@@ -90,7 +90,7 @@ model
       const texture =
         await model.loadTexture(
           gl,
-          `/live2dtest/jewel/${textureFileName}`
+          `/jewel/jewel/${textureFileName}`
         );
 
       model

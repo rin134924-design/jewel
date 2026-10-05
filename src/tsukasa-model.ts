@@ -22,7 +22,7 @@ export class TsukasaModel extends CubismUserModel {
 
   public async loadModelSetting(): Promise<void> {
     const response = await fetch(
-      '/live2dtest/jewel/jewel.model3.json'
+      '/jewel/jewel/jewel.model3.json'
     );
 
     if (!response.ok) {
@@ -48,7 +48,7 @@ export class TsukasaModel extends CubismUserModel {
 
   public async loadPhysics(): Promise<void> {
     const response = await fetch(
-      '/live2dtest/jewel/jewel.physics3.json'
+      '/jewel/jewel/jewel.physics3.json'
     );
 
     if (!response.ok) {
@@ -89,7 +89,7 @@ export class TsukasaModel extends CubismUserModel {
       this._modelSetting.getModelFileName();
 
     const response = await fetch(
-      `/live2dtest/jewel/${mocFileName}`
+      `/jewel/jewel/${mocFileName}`
     );
 
     console.log(
@@ -256,7 +256,7 @@ export class TsukasaModel extends CubismUserModel {
 
   public async loadOpeningMotion(): Promise<void> {
     const response = await fetch(
-      '/live2dtest/jewel/jewel_op.motion3.json'
+      '/jewel/jewel/jewel_op.motion3.json'
     );
 
     if (!response.ok) {
@@ -318,7 +318,7 @@ export class TsukasaModel extends CubismUserModel {
       of Object.entries(motionFiles)
     ) {
       const response = await fetch(
-        `/live2dtest/jewel/${fileName}`
+        `/jewel/jewel/${fileName}`
       );
 
       if (!response.ok) {
