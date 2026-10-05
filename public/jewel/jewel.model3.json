@@ -1,0 +1,28 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "jewel.moc3",
+		"Textures": [
+			"jewel.4096/texture_00.png",
+			"jewel.4096/texture_01.png",
+			"jewel.4096/texture_02.png"
+		],
+		"Physics": "jewel.physics3.json",
+		"DisplayInfo": "jewel.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
